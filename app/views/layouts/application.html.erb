@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="container">
+    <div class="header clearfix">
+    <nav>
+    <ul class="nav nav-pills pull-right">
+      <li role="presentation" class="active">
+      <a href="#">Home</a></li>
+      <li role="presentation" class="active">
+      <a href="#">About</a></li>    
+      <li role="presentation" class="active">
+      <a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <h3 class="text-muted">Project name</h3>
+    </div>
+
+    <%= yield %>
+  <footer class="footer">
+    <p>&cop; Company 2018</p>
+</footer>
+    </div>
+  </body>
+</html>
